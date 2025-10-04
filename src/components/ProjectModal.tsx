@@ -44,7 +44,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
           <h2 className="text-3xl font-bold text-foreground mb-4">{project.title}</h2>
           
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-foreground mb-2">Technologies Used</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-2">Programs Used</h3>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
                 <span

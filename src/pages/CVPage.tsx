@@ -6,35 +6,49 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 import projectImage1 from "@/assets/project-1.jpg";
 import projectImage2 from "@/assets/project-2.jpg";
 import projectImage3 from "@/assets/project-3.jpg";
+import projectImage4 from "@/assets/project-4.jpg";
+import projectImage5 from "@/assets/project-5.jpg";
+import projectImage6 from "@/assets/project-6.jpg";
+import projectImage7 from "@/assets/project-7.jpg";
 
 const projects = [
   {
     id: 1,
-    title: "Web Dashboard",
-    image: projectImage1,
-    description: "A modern web application with clean UI design",
-    detailedDescription: "This comprehensive web dashboard was built using React and TypeScript, featuring real-time data visualization, user management, and responsive design. The project showcases modern development practices including component-based architecture, state management, and API integration. Key features include interactive charts, user authentication, role-based access control, and mobile-responsive design.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
-    pdfUrl: "/sample-project-details.pdf"
+    title: "Water and Wastewater",
+    image: projectImage4,
+    description: "We designed a water and wastewater system for a residential project in Randaberg, based on terrain data and municipal requirements.",
+    detailedDescription: "In this project, we worked on developing technical water and wastewater plans for the building project at Vistnesveien 24 and 26 in Randaberg municipality. Using digital maps, zoning data, and VA-data (SOSI). We designed a pipeline network that will be handed over to the municipality. The system is supplied from the Varen reservoir at elevation +70, and we estimated head losses and selected an appropriate friction coefficient. The plan covers three building areas: BBB1 with 16 apartments, BBB2 with 10 apartments, and BK1 with 8 row houses. We based our design on the given terrain and building elevations. ",
+    technologies: ["Revit", "AutoCad", "Novapoint"],
+    pdfUrl: "/file:///C:/Users/tharm/Downloads/Intro.pdf"
   },
   {
     id: 2,
-    title: "Mobile App Design",
-    image: projectImage2,
-    description: "Elegant mobile application with intuitive user experience",
-    detailedDescription: "A cross-platform mobile application designed with user experience at its core. The app features smooth animations, intuitive navigation, and modern design principles. Built using React Native, it includes offline functionality, push notifications, and seamless integration with backend services. The project demonstrates expertise in mobile development, UI/UX design, and performance optimization.",
-    technologies: ["React Native", "Redux", "Firebase", "Expo"],
+    title: "Building Physics",
+    image: projectImage6,
+    description: "A low-energy house was designed from concept to energy analysis, gaining experience in both structural design and building physics.",
+    detailedDescription: "In this project, we designed a single-family house that meets the requirements of TEK17 and NS3700 for low-energy buildings. The work was divided into three parts: building permit drawings, including site plans, floor plans, elevations, sections, and climate data; structural design, including load calculations and ventilation solutions; and detailed construction drawings and energy calculations, evaluating U-values, thermal bridges, heat loss, internal heat gains, and annual energy demand. We also prepared an energy certificate and proposed energy supply solutions. The project combined building physics and structural engineering, providing us with experience in complete residential design, from sketches to final energy assessment.",
+    technologies: ["Revit", "AutoCad", "Excel"],
     pdfUrl: "/sample-project-details.pdf"
   },
   {
     id: 3,
-    title: "Analytics Platform",
-    image: projectImage3,
-    description: "Data visualization platform with advanced analytics",
-    detailedDescription: "A comprehensive analytics platform that transforms complex data into actionable insights. Features include real-time data processing, interactive visualizations, custom reporting, and automated alerts. The platform handles large datasets efficiently and provides users with intuitive tools for data exploration and analysis. Built with scalability and performance in mind.",
-    technologies: ["Python", "D3.js", "PostgreSQL", "Docker"],
+    title: "Area Planning",
+    image: projectImage5,
+    description: "We created a zoning plan for a 73-decare site in Sandnes with 70% housing, road and pedestrian networks, green spaces, and varied housing types.",
+    detailedDescription: "In this assignment, we prepared a detailed zoning plan for Høylandsmyrå in Austrått, Sandnes. The planning area is approximately 73 decares and we regulated it for mixed development and facilities, ensuring that at least 70% is dedicated to housing. We planned a new access road and a collector road through the site, as well as a pedestrian and bicycle network connected to existing and planned infrastructure. We also included green areas and playgrounds, while providing a variety of housing types and sizes. Throughout the work, we followed the %BRA and %BYA requirements set in the municipal master plan.",
+    technologies: ["Revit", "AutoCad", "Focus Arealplan"],
     pdfUrl: "/sample-project-details.pdf"
-  }
+
+  },
+    {
+      id: 4,
+      title: "Life extension analysis of Offshore structure",
+      image: projectImage7,
+      description: "We assessed an ageing structural component through analysis, reliability checks, and repair proposals, based on degradation data and engineering methods.",
+      detailedDescription: "In this project, we studied an ageing structural component to assess its degradation, uncertainty, and safety. We modeled one uncertain parameter, performed strength calculations, and carried out reliability analyses for the structure in three conditions: as new, degraded, and repaired. Bayesian updating was used based on inspection data, and we proposed a repair method. The results were presented in a 30-page report and a final presentation..",
+      technologies: ["Python", "D3.js", "PostgreSQL", "Docker"],
+      pdfUrl: "/sample-project-details.pdf"
+}
 ];
 
 export default function CVPage() {
@@ -72,17 +86,18 @@ export default function CVPage() {
             <img
               src={profilePhoto}
               alt="Profile"
-              className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white/20 shadow-card-hover"
+              className="w-80 h-80 rounded-full mx-auto mb-6 border-4 border-white/20 shadow-card-hover"
             />
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Hello, I'm Alex Johnson
+            Hello, I'm Jasanth
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto animate-fade-in">
-            A passionate full-stack developer creating beautiful, functional, and user-centered digital experiences. 
-            I love turning complex problems into simple, elegant solutions.
+         I'm a civil engineering graduate with a Bachelor's degree in Construction Engineering and a strong academic background from the University of Stavanger. I am currently in the process of earning two Master's degrees, one in Structural & Mechanical Engineering and the other in Industrial Economics & Management. My expertise includes structural design, infrastructure planning, and water and wastewater systems, with a growing focus on project management and leadership.
+
+         With experience across construction, logistics, education, and customer service, I bring a versatile skill set, strong communication abilities, and a passion for delivering sustainable, value-driven solutions. I'm motivated by continuous learning and projects that make a real impact on society and the environment.
           </p>
           
           <div className="flex justify-center mb-12 animate-fade-in">
@@ -90,7 +105,7 @@ export default function CVPage() {
               variant="secondary"
               size="lg"
               className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
-              onClick={() => window.open('https://linkedin.com/in/example', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/jasanth-santhakumar-448550114/?originalSubdomain=no', '_blank')}
             >
               <Linkedin className="mr-2" size={20} />
               Connect on LinkedIn
@@ -100,7 +115,7 @@ export default function CVPage() {
         
         {/* Scroll Indicator */}
         {showScrollHint && (
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
+          <div className="absolute bottom-8 transform -translate-x-1/2 text-white/70 animate-bounce">
             <div className="flex flex-col items-center">
               <span className="text-sm mb-2">Scroll to see my work</span>
               <ChevronDown size={24} />
@@ -117,7 +132,7 @@ export default function CVPage() {
               Featured Projects
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my recent work and the technologies I'm passionate about
+              A showcase of my recent work I'm passionate about
             </p>
           </div>
           
