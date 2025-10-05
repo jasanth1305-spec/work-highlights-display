@@ -19,7 +19,7 @@ const projects = [
     description: "We designed a water and wastewater system for a residential project in Randaberg, based on terrain data and municipal requirements.",
     detailedDescription: "In this project, we worked on developing technical water and wastewater plans for the building project at Vistnesveien 24 and 26 in Randaberg municipality. Using digital maps, zoning data, and VA-data (SOSI). We designed a pipeline network that will be handed over to the municipality. The system is supplied from the Varen reservoir at elevation +70, and we estimated head losses and selected an appropriate friction coefficient. The plan covers three building areas: BBB1 with 16 apartments, BBB2 with 10 apartments, and BK1 with 8 row houses. We based our design on the given terrain and building elevations. ",
     technologies: ["Revit", "AutoCad", "Novapoint"],
-    pdfUrl: "/file:///C:/Users/tharm/Downloads/Intro.pdf"
+    pdfUrl: "/water-wastewater-project.pdf"
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projects = [
     description: "A low-energy house was designed from concept to energy analysis, gaining experience in both structural design and building physics.",
     detailedDescription: "In this project, we designed a single-family house that meets the requirements of TEK17 and NS3700 for low-energy buildings. The work was divided into three parts: building permit drawings, including site plans, floor plans, elevations, sections, and climate data; structural design, including load calculations and ventilation solutions; and detailed construction drawings and energy calculations, evaluating U-values, thermal bridges, heat loss, internal heat gains, and annual energy demand. We also prepared an energy certificate and proposed energy supply solutions. The project combined building physics and structural engineering, providing us with experience in complete residential design, from sketches to final energy assessment.",
     technologies: ["Revit", "AutoCad", "Excel"],
-    pdfUrl: "/sample-project-details.pdf"
+    pdfUrl: "/building-physics-project.pdf"
   },
   {
     id: 3,
@@ -37,8 +37,7 @@ const projects = [
     description: "We created a zoning plan for a 73-decare site in Sandnes with 70% housing, road and pedestrian networks, green spaces, and varied housing types.",
     detailedDescription: "In this assignment, we prepared a detailed zoning plan for Høylandsmyrå in Austrått, Sandnes. The planning area is approximately 73 decares and we regulated it for mixed development and facilities, ensuring that at least 70% is dedicated to housing. We planned a new access road and a collector road through the site, as well as a pedestrian and bicycle network connected to existing and planned infrastructure. We also included green areas and playgrounds, while providing a variety of housing types and sizes. Throughout the work, we followed the %BRA and %BYA requirements set in the municipal master plan.",
     technologies: ["Revit", "AutoCad", "Focus Arealplan"],
-    pdfUrl: "/sample-project-details.pdf"
-
+    pdfUrl: "/area-planning-project.pdf"
   },
     {
       id: 4,
@@ -47,8 +46,8 @@ const projects = [
       description: "We assessed an ageing structural component through analysis, reliability checks, and repair proposals, based on degradation data and engineering methods.",
       detailedDescription: "In this project, we studied an ageing structural component to assess its degradation, uncertainty, and safety. We modeled one uncertain parameter, performed strength calculations, and carried out reliability analyses for the structure in three conditions: as new, degraded, and repaired. Bayesian updating was used based on inspection data, and we proposed a repair method. The results were presented in a 30-page report and a final presentation..",
       technologies: ["Python", "D3.js", "PostgreSQL", "Docker"],
-      pdfUrl: "/sample-project-details.pdf"
-}
+      pdfUrl: "/offshore-structure-project.pdf"
+  }
 ];
 
 export default function CVPage() {
