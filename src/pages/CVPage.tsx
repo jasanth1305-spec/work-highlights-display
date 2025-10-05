@@ -80,31 +80,34 @@ export default function CVPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 bg-hero-gradient">
+      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 bg-hero-gradient">
         <div className="max-w-4xl mx-auto text-center text-white">
-          <div className="mb-8 animate-fade-in">
+          <div className="mb-6 sm:mb-8 animate-fade-in">
             <img
               src={profilePhoto}
               alt="Profile"
-              className="w-80 h-80 rounded-full mx-auto mb-6 border-4 border-white/20 shadow-card-hover"
+              className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full mx-auto mb-4 sm:mb-6 border-4 border-white/20 shadow-card-hover"
             />
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fade-in px-4">
             Hello, I'm Jasanth
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto animate-fade-in">
-         I'm a civil engineering graduate with a Bachelor's degree in Construction Engineering and a strong academic background from the University of Stavanger. I am currently in the process of earning two Master's degrees, one in Structural & Mechanical Engineering and the other in Industrial Economics & Management. My expertise includes structural design, infrastructure planning, and water and wastewater systems, with a growing focus on project management and leadership.
-
-         With experience across construction, logistics, education, and customer service, I bring a versatile skill set, strong communication abilities, and a passion for delivering sustainable, value-driven solutions. I'm motivated by continuous learning and projects that make a real impact on society and the environment.
-          </p>
+          <div className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-3xl mx-auto animate-fade-in space-y-4">
+            <p>
+              I'm a civil engineering graduate with a Bachelor's degree in Construction Engineering and a strong academic background from the University of Stavanger. I am currently in the process of earning two Master's degrees, one in Structural & Mechanical Engineering and the other in Industrial Economics & Management. My expertise includes structural design, infrastructure planning, and water and wastewater systems, with a growing focus on project management and leadership.
+            </p>
+            <p>
+              With experience across construction, logistics, education, and customer service, I bring a versatile skill set, strong communication abilities, and a passion for delivering sustainable, value-driven solutions. I'm motivated by continuous learning and projects that make a real impact on society and the environment.
+            </p>
+          </div>
           
-          <div className="flex justify-center mb-12 animate-fade-in">
+          <div className="flex justify-center mb-8 sm:mb-12 animate-fade-in px-4">
             <Button
               variant="secondary"
               size="lg"
-              className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+              className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm w-full sm:w-auto"
               onClick={() => window.open('https://www.linkedin.com/in/jasanth-santhakumar-448550114/?originalSubdomain=no', '_blank')}
             >
               <Linkedin className="mr-2" size={20} />
@@ -125,18 +128,18 @@ export default function CVPage() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 sm:mb-4 px-4">
               Featured Projects
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               A showcase of my recent work I'm passionate about
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.id}

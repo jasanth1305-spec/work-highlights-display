@@ -22,7 +22,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
   if (!isOpen || !project) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black bg-opacity-50 backdrop-blur-sm">
       <div className="bg-card rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-card-hover animate-scale-in">
         <div className="relative">
           <img
@@ -40,11 +40,11 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
           </Button>
         </div>
         
-        <div className="p-8">
-          <h2 className="text-3xl font-bold text-foreground mb-4">{project.title}</h2>
+        <div className="p-4 sm:p-6 md:p-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-4">{project.title}</h2>
           
-          <div className="mb-6">
-            <h3 className="text-lg font-semibold text-foreground mb-2">Programs Used</h3>
+          <div className="mb-4 sm:mb-6">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">Programs Used</h3>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, index) => (
                 <span
@@ -68,9 +68,6 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
               <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer">
                 View Detailed PDF
               </a>
-            </Button>
-            <Button variant="outline" onClick={onClose}>
-              Close
             </Button>
           </div>
         </div>
