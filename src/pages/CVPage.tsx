@@ -13,7 +13,7 @@ type Language = "no" | "en";
 const translations = {
   no: {
     greeting: "Hei, jeg heter Jasanth",
-    bio1: "Jeg er en sivilingeniørutdannet med en bachelorgrad i konstruksjonsteknikk og en sterk faglig bakgrunn fra Universitetet i Stavanger. For øyeblikket holder jeg på med to mastergrader, en i Konstruksjons- og maskinteknikk og en i Industriell økonomi og ledelse. Min ekspertise inkluderer konstruksjonsdesign, infrastrukturplanlegging og vann- og avløpssystemer, med et økende fokus på prosjektledelse og lederskap.",
+    bio1: "Jeg er en siste års sivilingeniør student med en bachelorgrad i konstruksjonsteknikk og en sterk faglig bakgrunn fra Universitetet i Stavanger. For øyeblikket holder jeg på med to mastergrader, en i Konstruksjons- og maskinteknikk og en i Industriell økonomi og ledelse. Min ekspertise inkluderer konstruksjonsdesign, infrastrukturplanlegging og vann- og avløpssystemer, med et økende fokus på prosjektledelse og lederskap.",
     bio2: "Med erfaring innen bygg, logistikk, undervisning og kundeservice, bringer jeg med meg et allsidig ferdighetssett, sterke kommunikasjonsevner og en lidenskap for å levere bærekraftige, verdidrevne løsninger. Jeg motiveres av kontinuerlig læring og prosjekter som gjør en reell innvirkning på samfunnet og miljøet.",
     linkedinButton: "Koble til på LinkedIn",
     scrollHint: "Rull for å se arbeidet mitt",
