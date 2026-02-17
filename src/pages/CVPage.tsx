@@ -13,7 +13,7 @@ type Language = "no" | "en";
 const translations = {
   no: {
     greeting: "Hei, jeg heter Jasanth",
-    bio1: "Jeg er sisteårsstudent på sivilingeniørstudiet med bachelorgrad i konstruksjonsteknikk og en sterk faglig bakgrunn fra Universitetet i Stavanger. For tiden fullfører jeg to mastergrader, én i konstruksjons- og maskinteknikk og én i industriell økonomi og ledelse.\n\nMin faglige kompetanse omfatter konstruksjonsdesign, infrastrukturplanlegging samt vann- og avløpssystemer, med et økende fokus på prosjektledelse og lederskap.",
+    bio1: "Jeg er sisteårsstudent på sivilingeniørstudiet med bachelorgrad i konstruksjonsteknikk fra Universitetet i Stavanger. For tiden fullfører jeg to mastergrader, én i konstruksjons- og maskinteknikk og én i industriell økonomi og ledelse.\n\nMin faglige kompetanse omfatter konstruksjonsdesign, infrastrukturplanlegging samt vann- og avløpssystemer, med et økende fokus på prosjektledelse og lederskap.",
     bio2: "Gjennom erfaring innen bygg, logistikk, undervisning og kundeservice har jeg utviklet bred kompetanse, sterke kommunikasjonsevner og en tydelig evne til samarbeid. Jeg motiveres av å utvikle bærekraftige og verdiskapende løsninger, og av kontinuerlig læring og prosjekter som bidrar til positiv samfunns- og miljøpåvirkning.",
     linkedinButton: "Koble til på LinkedIn",
     scrollHint: "Rull for å se arbeidet mitt",
@@ -27,7 +27,7 @@ const translations = {
         technologies: ["Revit", "AutoCad", "Novapoint"]
       },
       {
-        title: "Byggfysikk",
+        title: "Bygningfysikk",
         description: "Et lavenergi hus ble designet fra konsept til energianalyse, med erfaring i både konstruksjonsdesign og byggfysikk.",
         detailedDescription: "I dette prosjektet designet vi et enebolig som oppfyller kravene i TEK17 og NS3700 for lavenergibygg. Arbeidet var delt inn i tre deler: byggetegninger, inkludert situasjonsplaner, plantegninger, fasader, snitt og klimadata; konstruksjonsdesign, inkludert lastberegninger og ventilasjonsløsninger; og detaljerte konstruksjonstegninger og energiberegninger, som evaluerer U-verdier, kuldebroer, varmetap, intern varmeproduksjon og årlig energibehov. Vi utarbeidet også et energisertifikat og foreslo energiforsyningsløsninger. Prosjektet kombinerte byggfysikk og konstruksjonsteknikk, og ga oss erfaring med komplett boligdesign, fra skisser til endelig energivurdering.",
         technologies: ["Revit", "AutoCad", "Excel"]
